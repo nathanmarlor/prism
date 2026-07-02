@@ -1,0 +1,29 @@
+[project]
+name = "profile-loop-mcp"
+version = "0.1.0"
+description = "MCP server for the Profile Loop: online preference learning over an editable text profile."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.2.0"
+]
+
+[project.optional-dependencies]
+# CPU SLM judge: a small GGUF model run locally via llama.cpp. No GPU needed.
+local = ["llama-cpp-python>=0.3.0", "huggingface-hub>=0.24"]
+# Distilling your own judge (scripts/distill_judge.py). Best on a training box.
+distill = ["transformers>=4.44", "peft>=0.12", "trl>=0.11", "datasets>=2.20"]
+
+[project.scripts]
+profile-loop-mcp = "profile_loop_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["profile_loop_mcp"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

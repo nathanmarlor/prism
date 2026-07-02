@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "profile-loop": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${CLAUDE_PLUGIN_ROOT}",
+        "python",
+        "-m",
+        "profile_loop_mcp.server"
+      ]
+    }
+  }
+}

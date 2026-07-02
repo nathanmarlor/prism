@@ -1,0 +1,13 @@
+{
+  "name": "profile-loop-plugins",
+  "owner": {
+    "name": "Version 1"
+  },
+  "plugins": [
+    {
+      "name": "profile-loop",
+      "source": "./plugins/profile-loop",
+      "description": "Personalization as online RL over an editable text profile. A validated judge watches live interactions and proposes small, reversible edits to the model's profile."
+    }
+  ]
+}

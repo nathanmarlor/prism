@@ -1,0 +1,10 @@
+{
+  "name": "profile-loop",
+  "version": "0.1.0",
+  "description": "Personalization as online RL over an editable text profile. A validated SLM judge watches live interactions and proposes small, reversible edits to the model's profile.",
+  "author": {
+    "name": "Version 1"
+  },
+  "license": "MIT",
+  "keywords": ["personalization", "preferences", "llm-as-judge", "profile", "dpo", "rlhf"]
+}
