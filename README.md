@@ -156,5 +156,3 @@ MIT
 - Judge: [LocalSLMJudge](plugins/profile-loop/profile_loop_mcp/judge.py) — position-debiased SLM
 - Buffer: [Threshold engine](plugins/profile-loop/profile_loop_mcp/buffer.py) — session caps, decay, direction margin
 - Validation: [Evaluator](plugins/profile-loop/profile_loop_mcp/evaluator.py) — judge validation + spec building
-
-Built by [Version 1](https://www.version1.com/).
